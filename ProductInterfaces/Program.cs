@@ -85,9 +85,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        InventorySystem inventory = new();
-        ElectronicProduct electronicProduct = new(1, "Laptop", 1500, 10, "Dell", "Inspiron 15");
-        FoodProduct foodProduct = new(2, "Leche", 40, 100, DateTime.Now);
+        InventorySystem inventory = new InventorySystem();
+        ElectronicProduct electronicProduct = new ElectronicProduct(1, "Laptop", 1500, 10, "Dell", "Inspiron 15");
+        FoodProduct foodProduct = new FoodProduct(2, "Leche", 40, 100, DateTime.Now);
 
         inventory.AddProduct(electronicProduct);
         inventory.AddProduct(foodProduct);
